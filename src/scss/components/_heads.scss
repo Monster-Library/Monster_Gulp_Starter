@@ -1,0 +1,36 @@
+h1 {
+  font-size: 2.5rem;
+  background-color: #df7171;
+  color: white;
+  width: 30%;
+  margin: 30px auto;
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+h1:hover {
+  box-shadow: 0 0 11px #df7171;
+}
+
+h3 {
+  font-size: 2.5rem;
+  background-color: #cc6161;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+h3:hover {
+  box-shadow: 0 0 11px #cc6161;
+}
+
+#result {
+  color: rgb(86, 211, 86);
+}
