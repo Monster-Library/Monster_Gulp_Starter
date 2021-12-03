@@ -19,18 +19,17 @@ function html() {
 // for css
 function css() {
   return gulp
-    .src("src/scss/*.css")
+    .src("src/style/*.css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(concat("style.css"))
     .pipe(gulp.dest("build"))
     .pipe(livereload());
 }
 
-
 // for js
 function js() {
   return gulp
-    .src("src/*.js")
+    .src("src/js/*.js")
     .pipe(concat("logic.js"))
     .pipe(gulp.dest("build"))
     .pipe(livereload());
