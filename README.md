@@ -4,6 +4,7 @@
 
 - You must download [Node.js](https://nodejs.org/en/) And [Cmder](https://cmder.net/)
 - open terminal and run `npm install` to install the files you need
+- open terminal and run `gulp` to serve\open the app
 - put all your web files to **src** folder
 - do **NOT** put **HTML** files in any folder just leave it in `src/`
 - put the **CSS** files in **style** folder
