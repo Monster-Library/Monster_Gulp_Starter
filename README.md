@@ -3,15 +3,19 @@
 ## Don't Forget
 
 - You must download [Node.js](https://nodejs.org/en/) And [Cmder](https://cmder.net/)
-- open terminal and run `npm install` to install the files you need
-- open terminal and run `gulp` to serve\open the app
+- all the **JavaScript** files will compination in logic.js in build folder
+- all the **CSS** files will compination in style.css in build folder
+
+## Steps
+
+- Download Files
 - put all your web files to **src** folder
 - do **NOT** put **HTML** files in any folder just leave it in `src/`
 - put the **CSS** files in **style** folder
 - put the **JavaScript** files in **JS** folder
 - put all the **Images** in this path `build/images/`
-- all the **JavaScript** files will compination in logic.js in build folder
-- all the **CSS** files will compination in style.css in build folder
+- open terminal and run `npm install` to install the files you need
+- open terminal and run `gulp` to serve\open the app
 
 ## gulpfile.js
 
@@ -63,39 +67,6 @@ exports.default = function () {
 
   gulp.watch(["src/*.html", "src/*.css", "src/*.js"], parallel(html, css, js));
 };
-```
-
-</p>
-</details>
-
-## package.json
-
-<details>
-<summary>package</summary>
-<p>
-
-```json
-{
-  "name": "monster-game",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-livereload": "^4.0.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Monster",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "gulp-htmlmin": "^5.0.1",
-    "static-server": "^2.2.1"
-  }
-}
 ```
 
 </p>
