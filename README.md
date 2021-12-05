@@ -1,21 +1,21 @@
-# Monster Gulp v1.6
+# Monster Gulp v1.9.1
 
 ## Don't Forget
 
 - you must download [Node.js](https://nodejs.org/en/) And [Cmder](https://cmder.net/)
-- you must put all the css or sass files in folder **style/**
+- you must put all the `css` or `sass` files in folder `style/`
 - The gulpfile.js is empty choose from the **Below Codes** the codes you want
-- all the **JavaScript** files will compination in logic.js in build folder
-- all the **Sass** files will converted to **CSS** in build folder
+- all the `JavaScript` files will compination in logic.js in build folder
+- all the `Sass` files will converted to `CSS` in build folder
 
 ## Steps
 
 - Download Files
-- put all your web files to **src** folder
-- put all the **Images** in this path `build/images/`
+- put all your web files to `src` folder
+- put all the `Images` in this path `build/images/`
 - open terminal and run `npm install` to install the files you need
-- choose from the **Bellow Codes** the codes you want and paste it in **gulpfile.js**
-- put all the style files in the style folder
+- choose from the **Bellow Codes** the codes you want and paste it in `gulpfile.js`
+- put all the `style` files in the **style folder**
 - open terminal and run `gulp` to serve\open the app
 
 ## Basic
