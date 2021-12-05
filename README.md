@@ -21,9 +21,11 @@
 - this variables must be in **gulpfile.js**
 
 ```js
-const livereload = require("gulp-livereload");
+// the gulp
 const gulp = require("gulp");
-// for run many function
+// for auto refresh
+const livereload = require("gulp-livereload");
+// for run many functions
 const { parallel } = require("gulp");
 ```
 
