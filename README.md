@@ -51,7 +51,7 @@ var concat = require("gulp-concat");
 // for html
 function html() {
   return gulp
-    .src("src/*.html")
+    .src("src/**/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"))
     .pipe(livereload());
@@ -60,7 +60,7 @@ function html() {
 // for css
 function css() {
   return gulp
-    .src("src/*.css")
+    .src("src/**/*.css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(concat("style.css"))
     .pipe(gulp.dest("build/css"))
@@ -70,7 +70,7 @@ function css() {
 // for js
 function js() {
   return gulp
-    .src("src/*.js")
+    .src("src/**/*.js")
     .pipe(concat("logic.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(livereload());
@@ -80,7 +80,7 @@ exports.default = function () {
   require("./server.js");
   livereload.listen();
   gulp.watch(
-    ["src/*.html", "src/**/*.css", "src/*.js"],
+    ["src/**/*.html", "src/**/*.css", "src/**/*.js"],
     parallel(html, css, js)
   );
 };
@@ -113,7 +113,7 @@ var concat = require("gulp-concat");
 // for pug
 function pug() {
   return gulp
-    .src("src/*.pug")
+    .src("src/**/*.pug")
     .pipe(pugTohtml({}))
     .pipe(gulp.dest("build"))
     .pipe(livereload());
@@ -122,7 +122,7 @@ function pug() {
 // for sass
 function sassTocss() {
   return gulp
-    .src("src/*.scss")
+    .src("src/**/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("build/css"))
@@ -132,7 +132,7 @@ function sassTocss() {
 // for js
 function js() {
   return gulp
-    .src("src/*.js")
+    .src("src/**/*.js")
     .pipe(concat("logic.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(livereload());
@@ -142,7 +142,7 @@ exports.default = function () {
   require("./server.js");
   livereload.listen();
   gulp.watch(
-    ["src/*.pug", "src/**/*.scss", "src/*.js"],
+    ["src/**/*.pug", "src/**/*.scss", "src/**/*.js"],
     parallel(sassTocss, js, pug)
   );
 };
@@ -165,7 +165,7 @@ const htmlmin = require("gulp-htmlmin");
 // for html
 function html() {
   return gulp
-    .src("src/*.html")
+    .src("src/**/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"))
     .pipe(livereload());
@@ -174,7 +174,7 @@ function html() {
 exports.default = function () {
   require("./server.js");
   livereload.listen();
-  gulp.watch(["src/*.html"], parallel(pug));
+  gulp.watch(["src/**/*.html"], parallel(pug));
 };
 ```
 
@@ -194,7 +194,7 @@ const pugTohtml = require("gulp-pug");
 // for pug
 function pug() {
   return gulp
-    .src("src/*.pug")
+    .src("src/**/*.pug")
     .pipe(pugTohtml({}))
     .pipe(gulp.dest("build"))
     .pipe(livereload());
@@ -203,7 +203,7 @@ function pug() {
 exports.default = function () {
   require("./server.js");
   livereload.listen();
-  gulp.watch(["src/*.pug"], parallel(pug));
+  gulp.watch(["src/**/*.pug"], parallel(pug));
 };
 ```
 
@@ -226,7 +226,7 @@ var sass = require("gulp-sass")(require("sass"));
 // for sass
 function sassTocss() {
   return gulp
-    .src("src/*.scss")
+    .src("src/**/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("build/css"))
@@ -259,7 +259,7 @@ var concat = require("gulp-concat");
 // for css
 function css() {
   return gulp
-    .src("src/*.css")
+    .src("src/**/*.css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(concat("style.css"))
     .pipe(gulp.dest("build/css"))
