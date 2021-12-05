@@ -2,7 +2,8 @@
 
 ## Don't Forget
 
-- You must download [Node.js](https://nodejs.org/en/) And [Cmder](https://cmder.net/)
+- you must download [Node.js](https://nodejs.org/en/) And [Cmder](https://cmder.net/)
+- you must put all the css or sass files in folder **style/**
 - The gulpfile.js is empty choose from the **Below Codes** the codes you want
 - all the **JavaScript** files will compination in logic.js in build folder
 - all the **Sass** files will converted to **CSS** in build folder
@@ -14,6 +15,7 @@
 - put all the **Images** in this path `build/images/`
 - open terminal and run `npm install` to install the files you need
 - choose from the **Bellow Codes** the codes you want and paste it in **gulpfile.js**
+- put all the style files in the style folder
 - open terminal and run `gulp` to serve\open the app
 
 ## Basic
@@ -60,7 +62,7 @@ function html() {
 // for css
 function css() {
   return gulp
-    .src("src/**/*.css")
+    .src("src/style/*.css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(concat("style.css"))
     .pipe(gulp.dest("build/css"))
@@ -122,7 +124,7 @@ function pug() {
 // for sass
 function sassTocss() {
   return gulp
-    .src("src/**/*.scss")
+    .src("src/style/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("build/css"))
@@ -226,7 +228,7 @@ var sass = require("gulp-sass")(require("sass"));
 // for sass
 function sassTocss() {
   return gulp
-    .src("src/**/*.scss")
+    .src("src/style/*.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(gulp.dest("build/css"))
@@ -259,7 +261,7 @@ var concat = require("gulp-concat");
 // for css
 function css() {
   return gulp
-    .src("src/**/*.css")
+    .src("src/style/*.css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(concat("style.css"))
     .pipe(gulp.dest("build/css"))
