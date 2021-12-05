@@ -16,6 +16,17 @@
 - choose from the **Bellow Codes** the codes you want and paste it in **gulpfile.js**
 - open terminal and run `gulp` to serve\open the app
 
+## Basic
+
+- this variables must be in **gulpfile.js**
+
+```js
+const livereload = require("gulp-livereload");
+const gulp = require("gulp");
+// for run many function
+const { parallel } = require("gulp");
+```
+
 ## HTML CSS JS
 
 - for projects that coding by `html css js`
@@ -78,7 +89,7 @@ exports.default = function () {
 
 ## PUG SCSS JS
 
-- for projects that coding by pug sass js
+- for projects that coding by `pug sass js`
 <details>
 <summary>gulpfile</summary>
 <p>
@@ -140,7 +151,7 @@ exports.default = function () {
 
 ## HTML
 
-- for just html
+- for just `html`
 <details>
 <summary>gulpfile</summary>
 <p>
@@ -170,7 +181,7 @@ exports.default = function () {
 
 ## PUG
 
-- for just pug
+- for just `pug`
 <details>
 <summary>gulpfile</summary>
 <p>
@@ -199,7 +210,7 @@ exports.default = function () {
 
 ## SASS
 
-- for just sass
+- for just `sass`
 <details>
 <summary>gulpfile</summary>
 <p>
@@ -232,7 +243,7 @@ exports.default = function () {
 
 ## CSS
 
-- for just css
+- for just `css`
 <details>
 <summary>gulpfile</summary>
 <p>
