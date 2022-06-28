@@ -1,18 +1,21 @@
-# Monster Gulp v1.9.1
+# Monster Gulp Starter v2.0.0 
 
 ## Don't Forget
 
 - you must download [Node.js](https://nodejs.org/en/) And [Cmder](https://cmder.net/)
 - you must put all the `css` or `sass` files in folder `style/`
 - The gulpfile.js is empty choose from the **Below Codes** the codes you want
-- all the `JavaScript` files will compination in logic.js in build folder
+- all the `JavaScript` files will comping in logic.js in build folder
 - all the `Sass` files will converted to `CSS` in build folder
 
 ## Steps
 
-- Download Files
+- download Files
 - put all your web files to `src` folder
 - put all the `Images` in this path `build/images/`
+- open terminal and run `npm install --save-dev gulp` to install gulp
+- open terminal and check if the gulp is installed `gulp --version` 
+- open terminal and run `npm update` to update the files you need
 - open terminal and run `npm install` to install the files you need
 - choose from the **Bellow Codes** the codes you want and paste it in `gulpfile.js`
 - put all the `style` files in the **style folder**
@@ -277,3 +280,23 @@ exports.default = function () {
 
 </p>
 </details>
+
+> [Gulp js crash course](https://www.youtube.com/watch?v=vW7up4wrBs4)
+> [Pug js crash course](https://www.youtube.com/watch?v=gDKcoSVzdLs&t=6s)
+
+
+## App Info
+
+### Author
+
+Mohamed Monster
+
+[About Me](https://about-monster.web.app/)
+
+[My Portfolio](https://z-monster.notion.site/Monster-Portfolio-dd12852c73ec477a9ba740de03a9acd5)
+
+[My GitHub](https://github.com/Monster-Mohamed)
+
+### Version
+
+2.0.0
